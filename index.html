@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hirono World | Pop Mart Collector</title>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;700&family=Playfair+Display:ital,wght@0,700;1,700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --bg-color: #f4f1ee;
+            --primary-color: #4a4540;
+            --accent-color: #8c786a;
+            --card-bg: #ffffff;
+            --soft-shadow: 0 10px 30px rgba(0,0,0,0.05);
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            background-color: var(--bg-color);
+            color: var(--primary-color);
+            line-height: 1.6;
+        }
+
+        /* Navigation */
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 2rem 10%;
+        }
+
+        .logo {
+            font-family: 'Playfair Display', serif;
+            font-size: 1.5rem;
+            font-weight: 700;
+            letter-spacing: 2px;
+        }
+
+        .nav-links {
+            list-style: none;
+            display: flex;
+            gap: 2rem;
+        }
+
+        .nav-links a {
+            text-decoration: none;
+            color: var(--primary-color);
+            font-weight: 500;
+            transition: 0.3s;
+        }
+
+        .nav-links a:hover {
+            color: var(--accent-color);
+        }
+
+        /* Hero Section */
+        .hero {
+            display: flex;
+            align-items: center;
+            padding: 5rem 10%;
+            min-height: 80vh;
+            gap: 4rem;
+        }
+
+        .hero-content {
+            flex: 1;
+        }
+
+        .hero-content h1 {
+            font-family: 'Playfair Display', serif;
+            font-size: 4rem;
+            line-height: 1.1;
+            margin-bottom: 1.5rem;
+        }
+
+        .hero-content p {
+            font-size: 1.1rem;
+            margin-bottom: 2rem;
+            color: var(--accent-color);
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 1rem 2.5rem;
+            background-color: var(--primary-color);
+            color: white;
+            text-decoration: none;
+            border-radius: 50px;
+            transition: 0.3s;
+            font-weight: 600;
+        }
+
+        .btn:hover {
+            background-color: var(--accent-color);
+            transform: translateY(-3px);
+        }
+
+        .hero-image {
+            flex: 1;
+            position: relative;
+        }
+
+        .main-img {
+            width: 100%;
+            max-width: 450px;
+            border-radius: 30px;
+            filter: drop-shadow(20px 20px 0px #dcd7d2);
+        }
+
+        /* Featured Section */
+        .featured {
+            padding: 5rem 10%;
+            text-align: center;
+        }
+
+        .featured h2 {
+            font-family: 'Playfair Display', serif;
+            font-size: 2.5rem;
+            margin-bottom: 3rem;
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 2rem;
+        }
+
+        .product-card {
+            background: var(--card-bg);
+            padding: 1.5rem;
+            border-radius: 20px;
+            transition: 0.4s;
+            box-shadow: var(--soft-shadow);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .product-card:hover {
+            transform: translateY(-10px);
+        }
+
+        .product-card img {
+            width: 100%;
+            border-radius: 15px;
+            margin-bottom: 1rem;
+        }
+
+        .product-card h3 {
+            font-size: 1.2rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .price {
+            font-weight: 700;
+            color: var(--accent-color);
+            display: block;
+            margin-bottom: 1rem;
+        }
+
+        .buy-btn {
+            width: 100%;
+            padding: 0.8rem;
+            border: 1px solid var(--primary-color);
+            background: transparent;
+            border-radius: 10px;
+            cursor: pointer;
+            font-family: inherit;
+            font-weight: 600;
+            transition: 0.3s;
+        }
+
+        .buy-btn:hover {
+            background: var(--primary-color);
+            color: white;
+        }
+
+        footer {
+            text-align: center;
+            padding: 4rem;
+            background: #e9e5e2;
+            margin-top: 5rem;
+        }
+
+        @media (max-width: 768px) {
+            .hero {
+                flex-direction: column;
+                text-align: center;
+                padding-top: 2rem;
+            }
+            .hero-content h1 {
+                font-size: 2.5rem;
+            }
+            .nav-links {
+                display: none;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <nav>
+        <div class="logo">HIRONO.LOG</div>
+        <ul class="nav-links">
+            <li><a href="#">Beranda</a></li>
+            <li><a href="#">Koleksi</a></li>
+            <li><a href="#">Blind Box</a></li>
+            <li><a href="#">Tentang</a></li>
+        </ul>
+    </nav>
+
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Temukan Dirimu di Dalam "Hirono"</h1>
+            <p>Jelajahi emosi yang jujur dan desain artistik dari karakter paling ikonik Lang dari Pop Mart. Setiap figur menceritakan kisah yang belum terucap.</p>
+            <a href="#shop" class="btn">Mulai Koleksi</a>
+        </div>
+        <div class="hero-image">
+            <img src="https://www.popmart.com/global/_next/image?url=https%3A%2F%2Fimg.popmart.com%2Foa_1ec06f8516087b32d2948ca2f0709be9.jpg&w=1080&q=75" alt="Hirono Main" class="main-img">
+        </div>
+    </section>
+
+    <section class="featured" id="shop">
+        <h2>Seri Terbaru</h2>
+        <div class="grid">
+            <div class="product-card">
+                <img src="https://www.popmart.com/global/_next/image?url=https%3A%2F%2Fimg.popmart.com%2Foa_5587784013143977579f1681289668d2.jpg&w=1080&q=75" alt="Hirono Mime">
+                <h3>The Other One Series</h3>
+                <span class="price">Rp 195.000</span>
+                <button class="buy-btn">Tambah ke Keranjang</button>
+            </div>
+            <div class="product-card">
+                <img src="https://www.popmart.com/global/_next/image?url=https%3A%2F%2Fimg.popmart.com%2Foa_f98c8c6f0e4479e96e962e7421319200.jpg&w=1080&q=75" alt="Hirono City of Mercy">
+                <h3>City of Mercy Series</h3>
+                <span class="price">Rp 210.000</span>
+                <button class="buy-btn">Tambah ke Keranjang</button>
+            </div>
+            <div class="product-card">
+                <img src="https://www.popmart.com/global/_next/image?url=https%3A%2F%2Fimg.popmart.com%2Foa_81387d8537901768856947702677849c.jpg&w=1080&q=75" alt="Hirono Little Mischief">
+                <h3>Little Mischief Series</h3>
+                <span class="price">Rp 195.000</span>
+                <button class="buy-btn">Tambah ke Keranjang</button>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Hirono Collector Hub. Bukan situs resmi Pop Mart.</p>
+    </footer>
+
+</body>
+</html>
